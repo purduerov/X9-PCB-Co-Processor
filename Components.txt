@@ -1,3 +1,5 @@
 10uF capacitor
 http://www.digikey.com/product-search/en/capacitors/tantalum-capacitors/131082?k=cap+3528&k=3528&k=&pkeyword=cap+3528&pv14=39&FV=fff40002%2Cfff8000a%2C340045&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25
 
+BSS138 - Bidirectional Level Shifter
+https://cdn.sparkfun.com/datasheets/BreakoutBoards/BSS138.pdf
