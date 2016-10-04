@@ -3,6 +3,9 @@ http://www.digikey.com/product-search/en/capacitors/tantalum-capacitors/131082?k
 
 BSS138 - Bidirectional Level Shifter
 https://cdn.sparkfun.com/datasheets/BreakoutBoards/BSS138.pdf
+http://www.digikey.com/product-detail/en/fairchild-semiconductor/BSS138/BSS138CT-ND/244294
 
 Oscillator
 https://www.sparkfun.com/products/536
+http://www.digikey.com/product-detail/en/abracon-llc/ABLS-16.000MHZ-B4-T/535-10226-1-ND/2184261
+
