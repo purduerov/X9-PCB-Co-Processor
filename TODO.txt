@@ -1,0 +1,10 @@
+Pending:
+	- Add a 5V to 3.3V linear regulator
+	- Hook up the output of the linear regulator to 3.3V
+	- Look into replacing the pushbutton with something smaller
+	- Make sure that the net hooked up to AREF is correct
+		x Check if the schematic reference has a name on the trace hooked up to AREF
+	- Find a smaller oscillator
+	- Pinout the remaining unused pins on the Atmega chip
+
+Completed:

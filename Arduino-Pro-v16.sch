@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8318,7 +8318,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="P+3" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+4" library="SparkFun" deviceset="VCC" device=""/>
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="10K"/>
-<part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="U$2" library="GeekAmmo" deviceset="TACTILE-SWITCH" device="-7914G"/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
 <part name="Y1" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="HC49US"/>
@@ -8360,7 +8359,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R9" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K"/>
 <part name="VCC2" library="SparkFun-Aesthetics" deviceset="VCCA" device=""/>
 <part name="3V2" library="SparkFun-Aesthetics" deviceset="VCCA" device=""/>
-<part name="3V4" library="SparkFun-Aesthetics" deviceset="VCCA" device=""/>
 <part name="U$4" library="DiscreteComponents" deviceset="BSS138" device=""/>
 <part name="R13" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K"/>
 <part name="R14" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K"/>
@@ -8371,6 +8369,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R16" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K"/>
 <part name="VCC4" library="SparkFun-Aesthetics" deviceset="VCCA" device=""/>
 <part name="3V3" library="SparkFun-Aesthetics" deviceset="VCCA" device=""/>
+<part name="GND15" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND16" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND17" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND18" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND19" library="SparkFun" deviceset="GND" device=""/>
+<part name="5VROV1" library="SparkFun-Aesthetics" deviceset="VCCA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8407,7 +8411,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="P+3" gate="1" x="-203.2" y="142.24"/>
 <instance part="P+4" gate="1" x="-218.44" y="177.8"/>
 <instance part="R3" gate="G$1" x="-218.44" y="170.18" rot="R90"/>
-<instance part="C6" gate="G$1" x="-226.06" y="160.02" rot="R90"/>
 <instance part="U$2" gate="G$1" x="-218.44" y="147.32" rot="R90"/>
 <instance part="GND12" gate="1" x="-215.9" y="137.16" rot="MR0"/>
 <instance part="Y1" gate="G$1" x="-193.04" y="152.4" rot="R270"/>
@@ -8450,7 +8453,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="R9" gate="G$1" x="76.2" y="96.52" rot="R90"/>
 <instance part="VCC2" gate="G$1" x="76.2" y="106.68" smashed="yes"/>
 <instance part="3V2" gate="G$1" x="50.8" y="106.68" smashed="yes"/>
-<instance part="3V4" gate="G$1" x="304.8" y="127" smashed="yes"/>
 <instance part="U$4" gate="G$1" x="66.04" y="55.88"/>
 <instance part="R13" gate="G$1" x="50.8" y="60.96" rot="R90"/>
 <instance part="R14" gate="G$1" x="76.2" y="60.96" rot="R90"/>
@@ -8461,6 +8463,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="R16" gate="G$1" x="76.2" y="27.94" rot="R90"/>
 <instance part="VCC4" gate="G$1" x="76.2" y="38.1" smashed="yes"/>
 <instance part="3V3" gate="G$1" x="50.8" y="38.1" smashed="yes"/>
+<instance part="GND15" gate="1" x="406.4" y="121.92"/>
+<instance part="GND16" gate="1" x="370.84" y="121.92"/>
+<instance part="GND17" gate="1" x="386.08" y="162.56"/>
+<instance part="GND18" gate="1" x="347.98" y="162.56"/>
+<instance part="GND19" gate="1" x="330.2" y="121.92"/>
+<instance part="5VROV1" gate="G$1" x="312.42" y="162.56" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -8575,6 +8583,45 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="-91.44" y1="86.36" x2="-91.44" y2="83.82" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="PCB1" gate="G$1" pin="GND@14"/>
+<wire x1="340.36" y1="154.94" x2="340.36" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="340.36" y1="165.1" x2="347.98" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="GND@20"/>
+<wire x1="347.98" y1="165.1" x2="355.6" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="165.1" x2="355.6" y2="154.94" width="0.1524" layer="91"/>
+<junction x="347.98" y="165.1"/>
+<pinref part="PCB1" gate="G$1" pin="GND@6"/>
+<wire x1="320.04" y1="154.94" x2="320.04" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="165.1" x2="340.36" y2="165.1" width="0.1524" layer="91"/>
+<junction x="340.36" y="165.1"/>
+</segment>
+<segment>
+<pinref part="PCB1" gate="G$1" pin="GND@30"/>
+<wire x1="381" y1="154.94" x2="381" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="381" y1="165.1" x2="386.08" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="GND@34"/>
+<wire x1="386.08" y1="165.1" x2="391.16" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="165.1" x2="391.16" y2="154.94" width="0.1524" layer="91"/>
+<junction x="386.08" y="165.1"/>
+</segment>
+<segment>
+<pinref part="PCB1" gate="G$1" pin="GND@25"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="370.84" y1="127" x2="370.84" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PCB1" gate="G$1" pin="GND@39"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="406.4" y1="127" x2="406.4" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PCB1" gate="G$1" pin="GND@9"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="330.2" y1="127" x2="330.2" y2="124.46" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -8583,11 +8630,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="JP3" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="-187.96" y1="160.02" x2="-215.9" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="3"/>
 <wire x1="-215.9" y1="160.02" x2="-218.44" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="-218.44" y1="160.02" x2="-223.52" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="-218.44" y1="152.4" x2="-218.44" y2="160.02" width="0.1524" layer="91"/>
 <junction x="-218.44" y="160.02"/>
 <pinref part="U$2" gate="G$1" pin="4"/>
@@ -8720,13 +8765,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="106.68" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
 <label x="76.2" y="104.14" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="DTR" class="0">
-<segment>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="-231.14" y1="160.02" x2="-233.68" y2="160.02" width="0.1524" layer="91"/>
-<label x="-233.68" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -9007,15 +9045,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="-71.12" y1="99.06" x2="-71.12" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCCA" class="0">
-<segment>
-<pinref part="3V4" gate="G$1" pin="VCCA"/>
-<wire x1="304.8" y1="127" x2="304.8" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="124.46" x2="309.88" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="PCB1" gate="G$1" pin="3V3@1"/>
-<wire x1="309.88" y1="124.46" x2="309.88" y2="127" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="5VMOSI" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -9147,6 +9176,18 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="IC1" gate="G$1" pin="(SCK/PCINT1)PB1"/>
 <wire x1="-116.84" y1="121.92" x2="-109.22" y2="121.92" width="0.1524" layer="91"/>
 <label x="-114.3" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VCCA" class="0">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="5V@2"/>
+<wire x1="309.88" y1="154.94" x2="309.88" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="5VROV1" gate="G$1" pin="VCCA"/>
+<wire x1="309.88" y1="162.56" x2="312.42" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="5V@4"/>
+<wire x1="312.42" y1="162.56" x2="314.96" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="162.56" x2="314.96" y2="154.94" width="0.1524" layer="91"/>
+<junction x="312.42" y="162.56"/>
 </segment>
 </net>
 </nets>
