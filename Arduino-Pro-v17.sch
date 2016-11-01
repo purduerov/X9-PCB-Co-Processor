@@ -9104,6 +9104,11 @@ Production Part - 8199
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="60.96" y1="121.92" x2="63.5" y2="121.92" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="PWM3" gate="G$1" pin="4"/>
+<wire x1="218.44" y1="86.36" x2="213.36" y2="86.36" width="0.1524" layer="91"/>
+<label x="210.82" y="86.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -9300,13 +9305,6 @@ Production Part - 8199
 <label x="-111.76" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="PWM3" gate="G$1" pin="4"/>
-<wire x1="218.44" y1="86.36" x2="213.36" y2="86.36" width="0.1524" layer="91"/>
-<label x="210.82" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="PWM0B" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(OC0B)PG5"/>
@@ -9314,9 +9312,9 @@ Production Part - 8199
 <label x="-114.3" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PWM2" gate="G$1" pin="4"/>
-<wire x1="218.44" y1="109.22" x2="213.36" y2="109.22" width="0.1524" layer="91"/>
-<label x="210.82" y="109.22" size="1.778" layer="95"/>
+<pinref part="PWM2" gate="G$1" pin="3"/>
+<wire x1="218.44" y1="111.76" x2="213.36" y2="111.76" width="0.1524" layer="91"/>
+<label x="210.82" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM0A" class="0">
@@ -9326,9 +9324,9 @@ Production Part - 8199
 <label x="-114.3" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PWM2" gate="G$1" pin="3"/>
-<wire x1="218.44" y1="111.76" x2="213.36" y2="111.76" width="0.1524" layer="91"/>
-<label x="210.82" y="111.76" size="1.778" layer="95"/>
+<pinref part="PWM2" gate="G$1" pin="4"/>
+<wire x1="218.44" y1="109.22" x2="213.36" y2="109.22" width="0.1524" layer="91"/>
+<label x="210.82" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM1B" class="0">
